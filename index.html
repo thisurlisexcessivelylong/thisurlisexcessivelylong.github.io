@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Symtpom Survey</title>
+    <title>Symptom Survey</title>
 </head>
+
 <body>
     <div class="center-screen">
-    <div id='name_form'>
-        <input placeholder="Enter your full name" style="width: 200px; height:20px;" id="name" type='text'/>
-        <br/>
-        <input id="password" style="width: 200px; height:20px; margin-top:10px;" placeholder="Password" />
-        <br/>
-        <button id="submit_button" style="margin-top: 10px; border-radius: 5px; border:none; width: 200px; height: 30px">Submit Name</button>
-    </div>
+        <div id='name_form'>
+            <input placeholder="Enter your full name" style="width: 200px; height:20px;" id="name" type='text' />
+            <br />
+            <input placeholder="Enter your email" style="width: 200px; height:20px;margin-top:10px;" id="email"
+                type='text' />
+            <br />
+            <input id="password" style="width: 200px; height:20px; margin-top:10px;" placeholder="Password" />
+            <br />
+            <button id="submit_button"
+                style="margin-top: 10px; border-radius: 5px; border:none; width: 200px; height: 30px">Submit
+                Name</button>
+            <br />
+            <button id="send_email_button"
+                style="margin-top: 10px; border-radius: 5px; border:none; width: 200px; height: 30px">Send
+                Email</button>
+        </div>
     </div>
     <div id="symtpomsurvey" style="display:none;">
         <div>
-            <style  type="text/css">
+            <style type="text/css">
                 <!--
                 .rps_1ddd p {
                     margin-top: 0;
@@ -35,7 +46,8 @@
                                     <tr>
                                         <th
                                             style="font-family:Roboto,arial,sans-serif; font-size:38.5px; font-weight:bold; text-align:center; height:70px; background-color:#2ECC71">
-                                            <span id='_name'></span></th>
+                                            <span id='_name'></span>
+                                        </th>
                                     </tr>
                                     <tr>
                                         <td
@@ -45,39 +57,49 @@
                                     <tr>
                                         <td
                                             style="font-family:Roboto,arial,sans-serif; font-size:38.5px; font-weight:bold; text-align:center; background-color:#2ecc71">
-                                            <span id='_date' ></span></td>
+                                            <span id='_date'></span>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <th
                                             style="font-family:Roboto,arial,sans-serif; font-size:38.5px; font-weight:bold; text-align:center; height:70px">
-                                            <span id='_time' ></span></th>
+                                            <span id='_time'></span>
+                                        </th>
                                     </tr>
                                 </tbody>
                             </table>
-                            <p style="margin-top:0px; margin-bottom:0px">You are cleared to access UC Davis campus sites.
+                            <p style="margin-top:0px; margin-bottom:0px">You are cleared to access UC Davis campus
+                                sites.
                                 Please save or print this approval and present it at the facility you wish to enter. A
                                 temperature check may also be required for access. </p>
                             <p style="margin-top:0px; margin-bottom:0px">As a reminder, unvaccinated individuals are
                                 required to wear face coverings indoors and get tested at least every four (4) days.
                                 Unvaccinated individuals are required to wear face coverings outdoors in crowded spaces.
-                                Everyone is required to wear a face covering when indoors. You can verify your vaccination
+                                Everyone is required to wear a face covering when indoors. You can verify your
+                                vaccination
                                 status in <a href="https://hem.ucdavis.edu" target="_blank" rel="noopener noreferrer"
                                     data-auth="NotApplicable" data-linkindex="0">Health-e-Messaging</a>. </p>
-                            <p style="margin-top:0px; margin-bottom:0px">Thank you for completing the daily symptom survey
+                            <p style="margin-top:0px; margin-bottom:0px">Thank you for completing the daily symptom
+                                survey
                                 and helping reduce the spread of the coronavirus in the UC Davis community. </p>
                             <p style="margin-top:0px; margin-bottom:0px">Please reach out if you need help. For medical
                                 visits, you can schedule a telehealth appointment via <a href="https://hem.ucdavis.edu"
                                     target="_blank" rel="noopener noreferrer" data-auth="NotApplicable"
-                                    data-linkindex="1">Health-e-Messaging</a> or speak with a nurse during normal business
+                                    data-linkindex="1">Health-e-Messaging</a> or speak with a nurse during normal
+                                business
                                 hours or the after-hours nurse advice service by calling 530-752-2349. For mental health
-                                visits, please review the <a
-                                    href="https://google.com" target="_blank"
-                                    rel="noopener noreferrer" data-auth="NotApplicable" data-linkindex="2">COVID-19 Mental
-                                    Health Resource Flyer</a> for more information about mental health appointments, crisis
-                                support and self-care that is available, based on where you are residing. Text 'RELATE' to
+                                visits, please review the <a href="https://google.com" target="_blank"
+                                    rel="noopener noreferrer" data-auth="NotApplicable" data-linkindex="2">COVID-19
+                                    Mental
+                                    Health Resource Flyer</a> for more information about mental health appointments,
+                                crisis
+                                support and self-care that is available, based on where you are residing. Text 'RELATE'
+                                to
                                 741741 for free, immediate and confidential crisis support by text message. </p>
-                            <p style="margin-top:0px; margin-bottom:0px"><b>Reminder</b> <br>You only need to complete the
-                                daily symptom survey if you enter university facilities or have close contact with others on
+                            <p style="margin-top:0px; margin-bottom:0px"><b>Reminder</b> <br>You only need to complete
+                                the
+                                daily symptom survey if you enter university facilities or have close contact with
+                                others on
                                 campus. </p>
                             <div class=""></div>
                             <div class="">
@@ -93,35 +115,39 @@
         </div>
     </div>
     <script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
 
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyCyTPW-nmjcjishp-Hu5maNDNlDC_yjCEE",
-    authDomain: "symptomsurvey-98c6d.firebaseapp.com",
-    projectId: "symptomsurvey-98c6d",
-    storageBucket: "symptomsurvey-98c6d.appspot.com",
-    messagingSenderId: "910569051042",
-    appId: "1:910569051042:web:8a1e5cdc54b5b5bf9318fb",
-    measurementId: "G-WQT609SJD4"
-  };
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyCyTPW-nmjcjishp-Hu5maNDNlDC_yjCEE",
+            authDomain: "symptomsurvey-98c6d.firebaseapp.com",
+            projectId: "symptomsurvey-98c6d",
+            storageBucket: "symptomsurvey-98c6d.appspot.com",
+            messagingSenderId: "910569051042",
+            appId: "1:910569051042:web:8a1e5cdc54b5b5bf9318fb",
+            measurementId: "G-WQT609SJD4"
+        };
 
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
     <script>
-        function english_ordinal_suffix(dt){
-            return dt.getDate()+(dt.getDate() % 10 == 1 && dt.getDate() != 11 ? 'st' : (dt.getDate() % 10 == 2 && dt.getDate() != 12 ? 'nd' : (dt.getDate() % 10 == 3 && dt.getDate() != 13 ? 'rd' : 'th'))); 
+        function english_ordinal_suffix(dt) {
+            return dt.getDate() + (dt.getDate() % 10 == 1 && dt.getDate() != 11 ? 'st' : (dt.getDate() % 10 == 2 && dt.getDate() != 12 ? 'nd' : (dt.getDate() % 10 == 3 && dt.getDate() != 13 ? 'rd' : 'th')));
         }
         const hideForm = () => {
             form = document.getElementById("name_form");
             form.innerHTML = "Scroll down...";
+        }
+        const emailSent = () => {
+            form = document.getElementById("name_form");
+            form.innerHTML = "Email sent";
         }
         const setName = () => {
             const name = document.getElementById("name").value;
@@ -148,10 +174,10 @@
             const month = arrMonth[date.getMonth()];
             const number = english_ordinal_suffix(date);
             const year = date.getFullYear();
-            
+
 
             const dateString = `${day}, ${month} ${number}, ${year}`;
-            
+
             document.getElementById("_date").innerHTML = dateString;
 
         }
@@ -162,7 +188,7 @@
             var ampm = hours >= 12 ? 'pm' : 'am';
             hours = hours % 12;
             hours = hours ? hours : 12; // the hour '0' should be '12'
-            minutes = minutes < 10 ? '0'+minutes : minutes;
+            minutes = minutes < 10 ? '0' + minutes : minutes;
             var strTime = hours + ':' + minutes + ' ' + ampm;
             return strTime;
         }
@@ -182,7 +208,7 @@
             const month = arrMonth[date.getMonth()];
             const number = english_ordinal_suffix(date);
             const year = date.getFullYear();
-            
+
 
             const dateString = `${day}, ${month} ${number}, ${year}`;
             const url = `https://symptomsurvey-98c6d-default-rtdb.firebaseio.com/${name}.json`;
@@ -199,7 +225,7 @@
 
         const submitButton = document.getElementById("submit_button");
         submitButton.onclick = () => {
-            
+
             if (checkPassword()) {
                 logData();
                 setName();
@@ -212,7 +238,144 @@
                 form.innerHTML = "";
             }
 
-            
+
+        }
+
+        const sendEmailButton = document.getElementById("send_email_button");
+        sendEmailButton.onclick = () => {
+ 
+            if (checkPassword()) {
+                const time = document.getElementById("_time").innerHTML = formatAMPM(new Date);
+
+const arrDay = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+const arrMonth = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const date = new Date();
+
+const day = arrDay[date.getDay()];
+const month = arrMonth[date.getMonth()];
+const number = english_ordinal_suffix(date);
+const year = date.getFullYear();
+
+
+const dateString = `${day}, ${month} ${number}, ${year}`;
+
+const name = document.getElementById("name").value;
+const email = document.getElementById("email").value;
+
+var myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/json");
+
+var raw = JSON.stringify({
+    "to": email,
+    "subject": "COVID Daily Symptom Survey Results",
+    "html": `<div id="symtpomsurvey">
+<div>
+<style type="text/css">
+    <!--
+    .rps_1ddd p {
+        margin-top: 0;
+        margin-bottom: 0
+    }
+    -->
+</style>
+<div class="rps_1ddd">
+    <div dir="ltr">
+        <div dir="ltr">
+            <div>
+                <table role="presentation" cellspacing="0" cellpadding="0" width="100%">
+                    <tbody>
+                        <tr>
+                            <th
+                                style="font-family:Roboto,arial,sans-serif; font-size:38.5px; font-weight:bold; text-align:center; height:70px; background-color:#2ECC71">
+                                <span id='_name'>${name}</span>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td
+                                style="font-family:Roboto,arial,sans-serif; font-size:38.5px; font-weight:bold; text-align:center; background-color:#2ecc71">
+                                APPROVED </td>
+                        </tr>
+                        <tr>
+                            <td
+                                style="font-family:Roboto,arial,sans-serif; font-size:38.5px; font-weight:bold; text-align:center; background-color:#2ecc71">
+                                <span id='_date'>${dateString}</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th
+                                style="font-family:Roboto,arial,sans-serif; font-size:38.5px; font-weight:bold; text-align:center; height:70px">
+                                <span id='_time'>${time}</span>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="margin-top:0px; margin-bottom:0px">You are cleared to access UC Davis campus
+                    sites.
+                    Please save or print this approval and present it at the facility you wish to enter. A
+                    temperature check may also be required for access. </p>
+                <p style="margin-top:0px; margin-bottom:0px">As a reminder, unvaccinated individuals are
+                    required to wear face coverings indoors and get tested at least every four (4) days.
+                    Unvaccinated individuals are required to wear face coverings outdoors in crowded spaces.
+                    Everyone is required to wear a face covering when indoors. You can verify your
+                    vaccination
+                    status in <a href="https://hem.ucdavis.edu" target="_blank" rel="noopener noreferrer"
+                        data-auth="NotApplicable" data-linkindex="0">Health-e-Messaging</a>. </p>
+                <p style="margin-top:0px; margin-bottom:0px">Thank you for completing the daily symptom
+                    survey
+                    and helping reduce the spread of the coronavirus in the UC Davis community. </p>
+                <p style="margin-top:0px; margin-bottom:0px">Please reach out if you need help. For medical
+                    visits, you can schedule a telehealth appointment via <a href="https://hem.ucdavis.edu"
+                        target="_blank" rel="noopener noreferrer" data-auth="NotApplicable"
+                        data-linkindex="1">Health-e-Messaging</a> or speak with a nurse during normal
+                    business
+                    hours or the after-hours nurse advice service by calling 530-752-2349. For mental health
+                    visits, please review the <a href="https://google.com" target="_blank"
+                        rel="noopener noreferrer" data-auth="NotApplicable" data-linkindex="2">COVID-19
+                        Mental
+                        Health Resource Flyer</a> for more information about mental health appointments,
+                    crisis
+                    support and self-care that is available, based on where you are residing. Text 'RELATE'
+                    to
+                    741741 for free, immediate and confidential crisis support by text message. </p>
+                <p style="margin-top:0px; margin-bottom:0px"><b>Reminder</b> <br>You only need to complete
+                    the
+                    daily symptom survey if you enter university facilities or have close contact with
+                    others on
+                    campus. </p>
+                <div class=""></div>
+                <div class="">
+                    <p style="margin-top:0px; margin-bottom:0px"></p>
+                    <p style="margin-top:0px; margin-bottom:0px"></p>
+                    <p style="margin-top:0px; margin-bottom:0px"></p>
+                    <p style="margin-top:0px; margin-bottom:0px"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>`
+});
+
+var requestOptions = {
+    method: 'POST',
+    headers: myHeaders,
+    body: raw,
+    redirect: 'follow'
+};
+
+fetch("https://symptomsurveyemailbackend.herokuapp.com/sendEmail", requestOptions)
+    .then(response => emailSent())
+    .then(result => console.log(result))
+    .catch(error => console.log('error', error));
+
+
+            } else {
+                form = document.getElementById("name_form");
+                form.innerHTML = "";
+            }
+
+
         }
 
     </script>
@@ -223,7 +386,8 @@
             align-items: center;
             text-align: center;
             min-height: 100vh;
-            }
+        }
     </style>
 </body>
+
 </html>
